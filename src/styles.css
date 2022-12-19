@@ -1,0 +1,116 @@
+body {
+  overflow: hidden;
+}
+.main-conatiner {
+  overflow: hidden;
+  font-size: 16px;
+  padding: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.month-year-selection-container select {
+  padding: 15px 30px;
+  font-size: 16px;
+  margin-right: 30px;
+  border: 2px solid black;
+}
+.month-year-selection-container {
+  display: flex;
+  justify-content: left;
+  margin-right: 12.5%;
+}
+
+.calander-container {
+  min-height: 200px;
+
+  max-width: 600px;
+  border: 1px solid #444;
+  margin: 30px 0;
+}
+
+.calander-container .week-row {
+  border-bottom: 1px solid #444;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.calander-container .week-row:last-of-type {
+  border: none;
+}
+
+.calander-container .week-row .day-cell {
+  border-right: 1px solid #444;
+  padding: 10px;
+  min-width: 50px;
+  min-height: 26px;
+  text-align: center;
+  width: 100%;
+}
+.calander-container .week-row .day-cell:last-of-type {
+  border: none;
+}
+.calander-container .week-row .day-cell.active {
+  background-color: green;
+  color: #fff;
+}
+
+.date-form input {
+  padding: 15px;
+  border-radius: 0;
+  outline: none;
+  border: 1px solid #444;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.date-form button {
+  padding: 15px 30px;
+  background: cornflowerblue;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .calander-container .week-row .day-cell {
+    border-right: 1px solid #444;
+    padding: 5px;
+    min-width: 27px;
+    min-height: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .main-conatiner {
+    overflow: hidden;
+    font-size: 10px;
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 86%;
+  }
+  .date-form input {
+    padding: 26px;
+    border-radius: 0;
+    outline: none;
+    border: 1px solid #444;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  month-year-selection-container select {
+    padding: 9px 0px;
+    font-size: 16px;
+    margin-right: 30px;
+    border: 2px solid black;
+  }
+  .month-year-selection-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 0%;
+  }
+}
